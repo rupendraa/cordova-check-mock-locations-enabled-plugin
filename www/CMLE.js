@@ -5,9 +5,13 @@ CMLE.prototype.check = function (callback) {
     cordova.exec(
         function(result) {
             if (result == 1) {
-                callback(true);
-            } else {
-                callback(false);
+                callback(1);
+            }
+	        else if (result == 2) {
+		        callback(2);
+	        }
+            else {
+                callback(0);
             }
         }, 
         function(error) {
