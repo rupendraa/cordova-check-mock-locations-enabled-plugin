@@ -1,4 +1,4 @@
-package com.shubbak.plugins;
+package io.dijitaladam.plugins.mocklocation;
 
 import org.apache.cordova.CordovaPlugin;
 import org.apache.cordova.CallbackContext;
@@ -14,9 +14,6 @@ public class CheckMockLocationsEnabled extends CordovaPlugin {
 
     @Override
     public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
-        /*callbackContext.success(1);
-        return true;*/
-
         if (action.equals("check")) {
             this.check(callbackContext);
             return true;
