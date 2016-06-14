@@ -9,10 +9,14 @@ cordova plugin add https://github.com/RashadSaleh/cordova-check-mock-locations-e
 
 ### How to use:
 ```javascript
-window.plugins.cml.check(function (enabled) {
-  if (enabled) {
+window.plugins.cml.check(function (result) {
+  if (result == 1) {
     console.log("Mock locations is enabled!");
-  } else {
+  }
+  else if (result == 2) {
+    console.log("Mock locations may be enabled on Android API 23!");
+  }
+  else {
     console.log("Mock locations is disabled!");
   }
 });
