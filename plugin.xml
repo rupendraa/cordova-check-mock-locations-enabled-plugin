@@ -32,11 +32,11 @@
   <platform name="android">
     <config-file target="res/xml/config.xml" parent="/*">
         <feature name="CheckMockLocationsEnabled">
-            <param name="android-package" value="io.dijitaladam.plugins.CheckMockLocationsEnabled"/>
+            <param name="android-package" value="io.dijitaladam.plugins.mocklocation.CheckMockLocationsEnabled"/>
         </feature>
     </config-file>
 
-    <source-file src="src/android/CheckMockLocationsEnabled.java" target-dir="src/io/dijitaladam/plugins/" />
+    <source-file src="src/android/CheckMockLocationsEnabled.java" target-dir="src/io/dijitaladam/plugins/mocklocation/" />
   </platform>
   
 </plugin>
