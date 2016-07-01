@@ -32,7 +32,7 @@ public class CheckMockLocationsEnabled extends CordovaPlugin {
 	          }
 	      }
 	      else{
-	        if(Settings.Secure.getInt(this.cordova.getActivity().getContentResolver(), Settings.Global.DEVELOPMENT_SETTINGS_ENABLED , 0) == 1)
+	        if(Settings.Global.getInt(this.cordova.getActivity().getContentResolver(), Settings.Global.DEVELOPMENT_SETTINGS_ENABLED , 0) == 1)
 	            callbackContext.success(2);
 	        else
 	            callbackContext.success(0);
