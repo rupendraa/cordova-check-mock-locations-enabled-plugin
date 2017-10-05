@@ -4,15 +4,13 @@ function CMLE() {
 CMLE.prototype.check = function (callback) {
     cordova.exec(
         function(result) {
-            if (result == 1) {
-                callback(1);
-            }
-	        else if (result == 2) {
-		        callback(2);
-	        }
-            else {
-                callback(0);
-            }
+			var obj = JSON.parse(result);
+			
+			if(typeof obj.appName === "undefined"){
+				obj.appName = [];	
+			}
+			
+			callback(obj);
         }, 
         function(error) {
             console.log(error);
