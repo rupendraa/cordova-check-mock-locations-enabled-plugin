@@ -4,7 +4,7 @@
     "description": "A cordova plugin to check whether mock location is enabled or not.",
     "repository": {
       "type": "git",
-      "url": "git+https://github.com/rakesh-makluri/cordova-check-mock-locations-enabled-plugin.git"
+      "url": "git+https://github.com/rupendraa/cordova-check-mock-locations-enabled-plugin.git"
     },
     "keywords": [
       "cordova",
@@ -16,9 +16,9 @@
     "author": "Matt Lewis",
     "license": "MIT",
     "bugs": {
-      "url": "https://github.com/rakesh-makluri/cordova-check-mock-locations-enabled-plugin/issues"
+      "url": "https://github.com/rupendraa/cordova-check-mock-locations-enabled-plugin/issues"
     },
-    "homepage": "https://github.com/rakesh-makluri/cordova-check-mock-locations-enabled-plugin#readme",
+    "homepage": "https://github.com/rupendraa/cordova-check-mock-locations-enabled-plugin#readme",
     "cordova": {
       "id": "cordova-check-mock-locations-enabled-plugin",
       "platforms": [
